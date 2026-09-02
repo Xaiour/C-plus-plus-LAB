@@ -31,7 +31,4 @@ int main(){
     cout<< isPalindrome(s)<<endl;
     cout<<toPalindrome(n)<<endl;
      return 0;
-
-    
-
 }
