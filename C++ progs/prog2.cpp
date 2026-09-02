@@ -22,6 +22,5 @@ int main() {
     std::cout << "\nBefore call by reference: b = " << b << "\n";
     callByReference(b); 
     std::cout << "After call by reference: b = " << b << "\n";
-    
     return 0;
 }
