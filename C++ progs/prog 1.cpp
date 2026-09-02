@@ -5,19 +5,19 @@ bool isPalindrome(const std::string& s) {
     int left = 0;
     int right = s.length() - 1;
     while (left < right) {
-        if (s[left] != s[right]) return false;  // mismatch found
+        if (s[left] != s[right]) return false;   
         left++;
         right--;
     }
     return true;}
     bool toPalindrome(int n) {
-    if (n < 0) return false;       // negatives like -121 aren't palindromes
+    if (n < 0) return false;       
     int original = n;
     int reversed = 0;
     while (n > 0) {
-        int digit = n % 10;        // last digit
+        int digit = n % 10;         
         reversed = reversed * 10 + digit;
-        n /= 10;                    // remove last digit
+        n /= 10;                     
     }
     return original == reversed;
 }
